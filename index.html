@@ -7,6 +7,22 @@
 </head>
 <body>
     <h1> Vigilant Eureka</h1>
-    <script></script>
+    <div class="main"></div>
+    <script>
+         const housing = document.querySelector('.main') 
+        for(let i = 0; ; i++){
+
+            const para = document.createElement('p')
+            const answer = Number(prompt('Enter number above 100: '))
+            if( answer <= 100 && answer) {
+                para.textContent = answer
+                housing.appendChild(para)
+                break
+            }
+
+        }
+
+
+    </script>
 </body>
 </html>
